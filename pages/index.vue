@@ -38,7 +38,7 @@ import Day1 from "@/components/challenges/Day1.vue"
 export default class Default extends Vue {
   challenges = challenges
   challengeNumber = 1
-  challengeName = 'Card Name'
+  challengeName = 'Hunbuger Menu'
   challengeComponent = 'Day1'
   changeChallengeCard(val: number) {
     const target = this.challenges.find(challnge => challnge.id === val)

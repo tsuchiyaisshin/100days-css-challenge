@@ -1,6 +1,13 @@
+const environment = process.env.NODE_ENV || 'local'
+const env = require(`./env/${environment}.ts`)
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
+
+  router: {
+    base: env.BASE_URL,
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
