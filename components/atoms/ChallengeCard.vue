@@ -2,7 +2,8 @@
   <div>
       <el-card class="box-card">
         <div slot="header" class="clearfix">
-            <span>{{ cardName }}</span>
+            <span class="no">Day.{{ challengeNumber }}</span>
+            <span class="name">{{ cardName }}</span>
         </div>
         <slot></slot>
       </el-card>
@@ -12,15 +13,22 @@
 <script lang="ts">
 import Vue from "vue"
 import { Component, Prop } from "vue-property-decorator"
-import Day1 from "@/components/challenges/Day1.vue"
 
-@Component({
-    components: {
-        Day1
-    }
-})
+@Component
 export default class ChallengeCard extends Vue {
     @Prop({ type: String, default: 'Card Name' })
     cardName!: string 
+
+    @Prop({ type: Number,  default: 1 })
+    challengeNumber!: number
 }
 </script>
+<style lang="scss" scoped>
+.no {
+    font-weight: bold;
+}
+.name {
+    margin-left: 16px;
+    text-align: center;
+}
+</style>

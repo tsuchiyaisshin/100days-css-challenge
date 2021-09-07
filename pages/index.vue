@@ -5,6 +5,7 @@
         <el-container>
           <challenge-card
             :cardName="challengeName"
+            :challengeNumber="challengeNumber"
           >
             <component :is="challengeComponent"></component>
           </challenge-card>
@@ -27,11 +28,13 @@ import { Component } from "nuxt-property-decorator"
 import Vue from "vue"
 import challenges from "@/assets/challenges.json"
 import ChallengeCard from "@/components/atoms/ChallengeCard.vue"
+import Sorry from "@/components/challenges/Sorry.vue"
 import Day1 from "@/components/challenges/Day1.vue"
 
 @Component({
   components: {
     ChallengeCard,
+    Sorry,
     Day1
   }
 })
@@ -46,6 +49,10 @@ export default class Default extends Vue {
       this.challengeNumber = target.id
       this.challengeName = target.name
       this.challengeComponent = target.component
+    } else {
+      this.challengeNumber = val
+      this.challengeName = 'In development...'
+      this.challengeComponent = 'Sorry'
     }
   }
 }
