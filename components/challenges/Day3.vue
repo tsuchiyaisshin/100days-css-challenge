@@ -13,20 +13,7 @@ import Vue from "vue"
 import { Component } from "vue-property-decorator"
 
 @Component
-export default class Day3 extends Vue {
-    isAnimation = true
-    changeAnimation() {
-        if (this.isAnimation) {
-            this.isAnimation = false
-        } else {
-            this.isAnimation = true
-        }
-    }
-
-    get isAnimationValue() {
-        return this.isAnimation
-    }
-}
+export default class Day3 extends Vue {}
 </script>
 
 <style lang="scss" scoped>
