@@ -3,5 +3,10 @@
         "id": 1,
         "name": "Hunbuger Menu",
         "component": "Day1"
+    },
+    {
+        "id": 2,
+        "name": "Pyramid Sunset",
+        "component": "Day2"
     }
 ]

@@ -30,12 +30,14 @@ import challenges from "@/assets/challenges.json"
 import ChallengeCard from "@/components/atoms/ChallengeCard.vue"
 import Sorry from "@/components/challenges/Sorry.vue"
 import Day1 from "@/components/challenges/Day1.vue"
+import Day2 from "@/components/challenges/Day2.vue"
 
 @Component({
   components: {
     ChallengeCard,
     Sorry,
-    Day1
+    Day1,
+    Day2
   }
 })
 export default class Default extends Vue {
