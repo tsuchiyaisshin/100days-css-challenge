@@ -2,21 +2,21 @@
     {
         "id": 1,
         "name": "Hunbuger Menu",
-        "component": "Day1"
+        "component": "ChallengesDay1"
     },
     {
         "id": 2,
         "name": "Pyramid Sunset",
-        "component": "Day2"
+        "component": "ChallengesDay2"
     },
     {
         "id": 3,
         "name": "3Dots Loading",
-        "component": "Day3"
+        "component": "ChallengesDay3"
     },
     {
         "id": 4,
         "name": "Weekly Report",
-        "component": "Day4"
+        "component": "ChallengesDay4"
     }
 ]

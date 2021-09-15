@@ -26,6 +26,13 @@ export default {
     ]
   },
 
+  components: [
+    {
+      path: '@/components/',
+      pathPrefix: false
+    }
+  ],
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     'element-ui/lib/theme-chalk/index.css'
